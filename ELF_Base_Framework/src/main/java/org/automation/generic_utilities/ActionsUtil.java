@@ -17,6 +17,11 @@ public class ActionsUtil {
 		actions = new Actions(driver);
 	}
 	
+	public static Actions action(WebDriver driver) {
+	    Actions act= new Actions(driver);
+	    return act;
+	}
+	
 	public void enterDataIntoTextField(WebElement targetElement , String dataToEnter) {
 		targetElement.clear();
 		actions.sendKeys(targetElement,dataToEnter).perform();

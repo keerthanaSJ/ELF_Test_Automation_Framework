@@ -3,11 +3,15 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testDataSample.SampleDataProvider">
+      <class name="org.automation.element_repository.Product_click">
         <methods>
-          <include name="registerUser"/>
+          <include name="browserTearDown"/>
+          <include name="browserSetUp"/>
+          <include name="Product_click"/>
+          <include name="loginToApplication"/>
+          <include name="logoutOfApplication"/>
         </methods>
-      </class> <!-- testDataSample.SampleDataProvider -->
+      </class> <!-- org.automation.element_repository.Product_click -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

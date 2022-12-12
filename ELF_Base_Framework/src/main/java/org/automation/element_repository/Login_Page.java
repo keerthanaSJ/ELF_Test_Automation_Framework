@@ -47,9 +47,10 @@ public class Login_Page extends Base_Page {
 		getLoginLink().click();
 		emailTextField.sendKeys(username);
 		passwordTextField.sendKeys(password);
+
 		loginButton.click();
 		
 		//landing Page Object
 		return new Home_Page(driver);
 	}
-}
+    }
